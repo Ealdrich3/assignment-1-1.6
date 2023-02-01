@@ -1,3 +1,4 @@
+document.write("pleasework");
 //old way
 var life = 100 ; // lifebar for easten
 
@@ -7,19 +8,19 @@ life = life - 10;
 
 life = life - 10;
 
-var name = 'easten 1'; 
+let name = 'easten 1'; 
 
-var checkout = false; // BOOLEAN 
+let checkout = false; // BOOLEAN 
 
-var box = null; 
+let box = null; 
 
 //object synbol
 
-console.log("name")
+console.log(name)
 // disable
 
 
 // new way
-const life =100;
+const health =100;
 
-const life =1000;  
+const hp =1000;  
