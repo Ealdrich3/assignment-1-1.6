@@ -69,6 +69,7 @@ const student = {
 
   */
 
+  /*
 const age = 18;
 let text = "123456789123456789";
 let length = text.length;
@@ -91,3 +92,45 @@ if (dice1 === 6 || dice2 === 6) {  // ||= or statement
 } else{
     console.log("you didnt");
 }
+*/
+
+const names= ["Luffy", "Naruto", "Goku", "deku", "Tanjiro", "Saitama", "Denji"];
+
+for (name of names) {
+    console.log(name);
+    if (name === "Saitama") {
+        console.log("Saitama has won the fight");
+        break;
+    }
+}
+
+let loading = 0 
+
+while (loading < 100) {
+    console.log("Website is still loading")
+
+    loading++; 
+}
+
+const text = document.querySelector(".title");
+const changecolor = document.querySelector(".changecolor");
+
+text.style.transform = "red";
+
+changecolor.addEventListener("click", function(){ //callback function
+    text.classList.toggle("change")
+}) ;
+
+const userlist= document.querySelectorAll("name-list li");
+const listInput = document.querySelector(".list-input");
+const addListBtn = document.querySelector(".addListBtn");
+
+addListBtn.addEventListener("click", function() {
+    const newLi = document.createElement("li");
+    const licontent = document.createTextNode(listinput.value);
+    newLi.appendChild(licontent);
+    userlist.appendChild(newli);
+}
+)
+
+
