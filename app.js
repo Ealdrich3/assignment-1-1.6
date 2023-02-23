@@ -125,7 +125,7 @@ const userlist= document.querySelectorAll("name-list li");
 const listInput = document.querySelector(".list-input");
 const addListBtn = document.querySelector(".addListBtn");
 
-addListBtn.addEventListener("click", function() {
+addListBtn.addEventListener("click", function(){
     const newLi = document.createElement("li");
     const licontent = document.createTextNode(listinput.value);
     newLi.appendChild(licontent);
