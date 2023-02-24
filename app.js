@@ -94,6 +94,7 @@ if (dice1 === 6 || dice2 === 6) {  // ||= or statement
 }
 */
 
+/*
 const names= ["Luffy", "Naruto", "Goku", "deku", "Tanjiro", "Saitama", "Denji"];
 
 for (name of names) {
@@ -135,3 +136,29 @@ addListBtn.addEventListener("click", function(){
 )
 
 */
+
+const schedule = ["Wake up at 8", "Eat", "do HW", "art and video editing"];
+
+schedule.unshift("workout")
+
+console.log(schedule.indexOf("Wake up at 8")); 
+
+
+const user = {
+    name: "East",
+    age: 22,
+    married: false,
+    Inventory: ["sword", "potion", "bow"],
+
+    sayName: function() {
+        console.log(this.name);
+    }
+};
+
+user.sayName();
+
+function saymyAge() {
+    console.log('My age is ${this}');
+}
+
+saymyAge();
